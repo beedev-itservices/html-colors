@@ -1,0 +1,943 @@
+body {
+  background-color: #fff;
+}
+body nav {
+  position: fixed;
+  display: flex;
+  width: 95%;
+  margin: auto;
+  background-color: darkcyan;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
+  border: 3px double lightcyan;
+}
+body nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body nav ul li {
+  padding: 4px 8px;
+  background: #eee;
+  margin: 0 1em;
+}
+body nav ul li:hover {
+  background: #DBDBDB;
+  transition: 0.3s;
+}
+body nav ul li a {
+  text-decoration: none;
+}
+body nav > ul > li {
+  float: left;
+}
+body nav > ul > li > a {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body nav > ul > li > ul {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+body nav > ul > li > ul li {
+  float: left;
+}
+body nav > ul > li > ul li.menu-item-has-children > a:after {
+  content: " >";
+}
+body nav > ul > li > ul ul {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+body nav > ul > li > ul li:hover > ul {
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+}
+body nav > ul > li:hover > ul {
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 90px;
+  z-index: -1;
+  background-color: #fff;
+  color: #000;
+}
+body .main {
+  display: flex;
+  z-index: -1;
+  position: relative;
+  top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main .content {
+  display: flex;
+  z-index: -1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .main .content img {
+  width: 25em;
+}
+body .main .wheel {
+  margin: auto;
+  border: 3px solid #000;
+  padding: 1em;
+  width: 58.5em;
+  text-align: center;
+}
+body .main .wheel .row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .main .wheel .row1 .box1 {
+  background-color: #003366;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row1 .box2 {
+  background-color: #336699;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row1 .box3 {
+  background-color: #3366cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row1 .box4 {
+  background-color: #003399;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row1 .box5 {
+  background-color: #000099;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row1 .box6 {
+  background-color: #0000cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row1 .box7 {
+  background-color: #000066;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row2 .box1 {
+  background-color: #006666;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box2 {
+  background-color: #006699;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box3 {
+  background-color: #0099cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box4 {
+  background-color: #0066cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box5 {
+  background-color: #0033cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box6 {
+  background-color: #0000ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box7 {
+  background-color: #3333ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row2 .box8 {
+  background-color: #333399;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row3 .box1 {
+  background-color: #669999;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box2 {
+  background-color: #009999;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box3 {
+  background-color: #33cccc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box4 {
+  background-color: #00ccff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box5 {
+  background-color: #0099ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box6 {
+  background-color: #0066ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box7 {
+  background-color: #3366ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box8 {
+  background-color: #3333cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row3 .box9 {
+  background-color: #666699;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row4 .box1 {
+  background-color: #339966;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box2 {
+  background-color: #00cc99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box3 {
+  background-color: #00ffcc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box4 {
+  background-color: #00ffff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box5 {
+  background-color: #33ccff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box6 {
+  background-color: #3399ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box7 {
+  background-color: #6699ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box8 {
+  background-color: #6666ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box9 {
+  background-color: #6600ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row4 .box10 {
+  background-color: #6600cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row5 .box1 {
+  background-color: #339933;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box2 {
+  background-color: #00cc66;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box3 {
+  background-color: #00ff99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box4 {
+  background-color: #66ffcc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box5 {
+  background-color: #66ffff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box6 {
+  background-color: #66ccff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box7 {
+  background-color: #99ccff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box8 {
+  background-color: #9999ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box9 {
+  background-color: #9966ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box10 {
+  background-color: #9933ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row5 .box11 {
+  background-color: #9900ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row6 .box1 {
+  background-color: #006600;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box2 {
+  background-color: #00cc00;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box3 {
+  background-color: #00ff00;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box4 {
+  background-color: #66ff99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box5 {
+  background-color: #99ffcc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box6 {
+  background-color: #ccffff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box7 {
+  background-color: #ccccff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box8 {
+  background-color: #cc99ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box9 {
+  background-color: #cc66ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box10 {
+  background-color: #cc33ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box11 {
+  background-color: #cc00ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row6 .box12 {
+  background-color: #9900cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row7 .box1 {
+  background-color: #003300;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box2 {
+  background-color: #009933;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box3 {
+  background-color: #33cc33;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box4 {
+  background-color: #66ff66;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box5 {
+  background-color: #99ff99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box6 {
+  background-color: #ccffcc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box7 {
+  background-color: #ffffff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box8 {
+  background-color: #ffccff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box9 {
+  background-color: #ff99ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box10 {
+  background-color: #ff66ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box11 {
+  background-color: #ff00ff;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box12 {
+  background-color: #cc00cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row7 .box13 {
+  background-color: #660066;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row8 .box1 {
+  background-color: #336600;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box2 {
+  background-color: #009900;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box3 {
+  background-color: #66ff33;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box4 {
+  background-color: #99ff66;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box5 {
+  background-color: #ccff99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box6 {
+  background-color: #ffffcc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box7 {
+  background-color: #ffcccc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box8 {
+  background-color: #ff99cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box9 {
+  background-color: #ff66cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box10 {
+  background-color: #ff33cc;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box11 {
+  background-color: #cc0099;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row8 .box12 {
+  background-color: #993399;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row9 .box1 {
+  background-color: #333300;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box2 {
+  background-color: #669900;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box3 {
+  background-color: #99ff33;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box4 {
+  background-color: #ccff66;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box5 {
+  background-color: #ffff99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box6 {
+  background-color: #ffcc99;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box7 {
+  background-color: #ff9999;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box8 {
+  background-color: #ff6699;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box9 {
+  background-color: #ff3399;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box10 {
+  background-color: #cc3399;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row9 .box11 {
+  background-color: #990099;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row10 .box1 {
+  background-color: #666633;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box2 {
+  background-color: #99cc00;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box3 {
+  background-color: #ccff33;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box4 {
+  background-color: #ffff66;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box5 {
+  background-color: #ffcc66;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box6 {
+  background-color: #ff9966;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box7 {
+  background-color: #ff6666;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box8 {
+  background-color: #ff0066;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box9 {
+  background-color: #cc6699;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row10 .box10 {
+  background-color: #993366;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row11 .box1 {
+  background-color: #999966;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box2 {
+  background-color: #cccc00;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box3 {
+  background-color: #ffff00;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box4 {
+  background-color: #ffcc00;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box5 {
+  background-color: #ff9933;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box6 {
+  background-color: #ff6600;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box7 {
+  background-color: #ff5050;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box8 {
+  background-color: #cc0066;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row11 .box9 {
+  background-color: #660033;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row12 .box1 {
+  background-color: #996633;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box2 {
+  background-color: #cc9900;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box3 {
+  background-color: #ff9900;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box4 {
+  background-color: #cc6600;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box5 {
+  background-color: #ff3300;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box6 {
+  background-color: #ff0000;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box7 {
+  background-color: #cc0000;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row12 .box8 {
+  background-color: #990033;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .wheel .row13 .box1 {
+  background-color: #663300;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 .box2 {
+  background-color: #996600;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 .box3 {
+  background-color: #cc3300;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 .box4 {
+  background-color: #993300;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 .box5 {
+  background-color: #990000;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 .box6 {
+  background-color: #800000;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}
+body .main .wheel .row13 .box7 {
+  background-color: #993333;
+  width: 4.5em;
+  height: 3.5em;
+  border-radius: 40%;
+}

@@ -1,0 +1,132 @@
+.blue {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.blue .box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 1em 1em 1em;
+}
+.blue .box1 .row1 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: white;
+}
+.blue .box1 .row2 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row3 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row4 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row5 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row6 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row7 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row8 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row9 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #fff;
+}
+.blue .box1 .row10 {
+  width: 7em;
+  padding: 0.2em 1em;
+  background-color: #000;
+}
+.blue .box1 .row11 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row12 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row13 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row14 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row15 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row16 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row17 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row18 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row19 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row20 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: #000;
+}
+.blue .box1 .row21 {
+  width: 7em;
+  padding: 0.2em 1em;
+  color: white;
+  background-color: black;
+}
